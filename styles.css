@@ -49,6 +49,7 @@ nav {
   animation: nav-load var(--nav-load-time) ease-in;
 }
 
+
 nav > div {
   padding-top: 20px;
 }
@@ -114,6 +115,13 @@ nav > a:hover {
   animation-duration: 60s;
 }
 
+@media screen and (max-width: 900px) {
+  .fa-vine {
+    margin-left: 45px;
+  }
+}
+
+
 .fa-instagram {
   padding: 0 5px;
 }
@@ -163,8 +171,14 @@ nav > a:hover {
   align-content: center;
 }
 
+@media screen and (max-width: 700px) {
+  .summary-section {
+    margin: 100px 50px 0;
+   
+}
+
+
 .title {
-  border-bottom: 1px solid white;
   width: 9%;
   align-self: center;
   margin-bottom: 20px;
@@ -175,6 +189,13 @@ nav > a:hover {
   animation-fill-mode: forwards;
   transform: translateY(-20px);
   opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    border-bottom: none;
+    margin-right: 100px;
+  }
 }
 
 .summary-article {
@@ -196,6 +217,7 @@ nav > a:hover {
 @media screen and (max-width: 700px) {
   .summary-article > p {
     padding: 0 10px;
+    line-height: 2rem;
   }
 }
 
@@ -218,6 +240,13 @@ nav > a:hover {
   height: auto;
 }
 
+@media screen and (max-width: 700px) {
+  .experience {
+    margin-top: 100px;
+  }
+}
+
+
 .img > p {
   line-height: 0.5rem;
   animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
@@ -232,6 +261,16 @@ nav > a:hover {
   margin-top: 40px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 700px) {
+  .image {
+   justify-content: center;
+    max-width: 200px;
+    align-self: center;
+    padding-top: 40px;
+  }
+}
+
 
 .img {
   width: 200px;
@@ -261,11 +300,45 @@ nav > a:hover {
   height: auto;
 }
 
+@media screen and (max-width: 700px) {
+  .education {
+    margin-top: 100px;
+    
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .images {
+   justify-content: center;
+    max-width: 200px;
+    align-self: center;
+    padding-top: 40px;
+    text-align: center;
+  }
+}
+
+
 .imgs {
   width: 200px;
   height: 200px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .imgs {
+    width: 220px;
+  height: 200px;
+    
+  }
+}
+
 
 .imgs > p {
   line-height: 0.5rem;
@@ -274,6 +347,13 @@ nav > a:hover {
   animation-fill-mode: forwards;
   transform: translateY(-20px);
   opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .imgs > p {
+   margin-top: 20px;
+    
+  }
 }
 
 .imgs:hover {
@@ -351,19 +431,19 @@ nav > a:hover {
 .title {
   align-self: center;
   margin-top: 50px;
-  width: 9%;
-  border-bottom: 1px solid white;
   cursor: pointer;
   animation: article-load 300ms ease-in var(--article-load-delay);
   animation-fill-mode: forwards;
   transform: translateY(-20px);
   opacity: 0;
+  
 }
 
 @media screen and (max-width: 700px) {
   .title {
     margin-top: 100px;
     width: 9%;
+    margin-right: 100px;
   }
 }
 
